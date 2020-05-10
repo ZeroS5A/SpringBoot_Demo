@@ -4,6 +4,8 @@ public enum ResultStatus {
     SUCCESS(200, "success"),     //成功
     SERVERERR(4500,"internal error"),//内部错误
     UNKNOWERR(4501,"unknown mistake"),//未知错误
+    ROLEERR(4105,"User identity error"),//用户身份错误
+    NOTOKEN(4107,"token invalid"),//Token验证失败
     SERVICE_EXCEPTION(5000, "service exception");
 
     private final int value;

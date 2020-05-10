@@ -41,4 +41,8 @@ public class Result<T> {
         this.code = resultStatus.value();
         this.message = resultStatus.getReasonPhrase();
     }
+    public void setResult(ResultStatus resultStatus){
+        this.code = resultStatus.value();
+        this.message = resultStatus.getReasonPhrase();
+    }
 }

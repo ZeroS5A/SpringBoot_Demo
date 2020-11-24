@@ -1,5 +1,9 @@
-# SpringBoot 软工实训
+# SpringBoot Demo
 
+### 集成
+- mybatis
+- shiro
+- druid
 ```
 
 ```

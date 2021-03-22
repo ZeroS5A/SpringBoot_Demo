@@ -1,6 +1,7 @@
 package com.config;
 
 import com.commom.JwtFilter;
+import com.commom.ShiroFilter;
 import com.commom.ShiroRealm;
 import org.apache.shiro.mgt.DefaultSessionStorageEvaluator;
 import org.apache.shiro.mgt.DefaultSubjectDAO;
@@ -25,6 +26,7 @@ public class ShiroConfig {
         // 设置自定义的jwt过滤器
         Map<String, Filter> filterMap = new HashMap<String, Filter>();
         filterMap.put("jwt", new JwtFilter());// jwt验证
+        filterMap.put("shiro", new ShiroFilter());// 不验证
         shiroFilterFactoryBean.setFilters(filterMap);
         // 设置无权限时跳转的url
         shiroFilterFactoryBean.setUnauthorizedUrl("/Error/unauthorized");
